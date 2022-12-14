@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>300</x>
+      <y>10</y>
+      <w>210</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>_Class:Casino_
+--
+yesorno: int
+bet: int 
+credit: int
+current: int
+wantToPlayGame: boolean
+--
+validInput(int, Scanner):int
+validCredit(int, Scanner):int
+validBet(int, int, Scanner):int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>40</x>
+      <y>160</y>
+      <w>210</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>Class:Craps
+--
+-roll:Object
+-dice:int
+-score:int
+cred:Money
+--
++rollValue():int
++rule(Money, int, int, int):String
++ruleBook2():String
++setResult(Money): void
++getResult():Money
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>530</x>
+      <y>150</y>
+      <w>260</w>
+      <h>320</h>
+    </coordinates>
+    <panel_attributes>Class:BlackJack
+--
+-roll:Object
+-r1:int
+-r2:int
+-rr:int
+-score:int
+-suits:array of Strings
+-ranks:array of ints
+-s1:String
+-s2:String
+cred:Money
+--
++getDeck():String
++startScore():int
++getExtra():String
++addScore():int
++rule(Money, int, int, int, int):String
++ruleBook1():String
++setResult(Money): void
++getResult():Money
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>190</x>
+      <y>360</y>
+      <w>210</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>Class:Money
+--
+-int current
+--
++setLoseBet(int, int)
++getLoseBet():int
++setWinBet(int, int)
++getWinBet():int
++getStartCredit():String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>170</y>
+      <w>140</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>120.0;10.0;10.0;190.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>140</x>
+      <y>80</y>
+      <w>170</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>150.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>510</x>
+      <y>80</y>
+      <w>170</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;150.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>390</x>
+      <y>320</y>
+      <w>150</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;120.0;130.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>120</x>
+      <y>340</y>
+      <w>80</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>60.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
